@@ -1,0 +1,28 @@
+{
+  "name": "wabpackdemo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "webpack --config webpack.test.js",
+    "supervisor": "supervisor runWebpack.js",
+    "node": "node runWebpack.js",
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js --config  webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --inline --config  webpack.config.js"
+  },
+  "author": "Sorry",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^17.0.1",
+    "vue": "^2.6.12",
+    "webpack": "^4.36.1",
+    "webpack-chain": "^6.5.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-middleware": "^4.0.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
