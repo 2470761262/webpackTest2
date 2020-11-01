@@ -1,5 +1,10 @@
-import gogo from "../gogo";
+//import gogo from "../gogo";
 
-alert(1);
 
-gogo.run();
+if (module.hot) {  
+  module.hot.accept();
+ }
+console.log(550);
+console.log("挺好哦");
+
+//gogo.run();

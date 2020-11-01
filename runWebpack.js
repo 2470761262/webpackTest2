@@ -1,13 +1,22 @@
 const webpack = require('webpack');
-const middleware = require('webpack-dev-middleware');
+const devMiddleware = require('webpack-dev-middleware');
+const hotMiddleware = require("webpack-hot-middleware");
 const config = require("./webpack.node");
 const compiler = webpack(config);
 const express = require('express');
 const app = express();
 
+//app.use(express.static(__dirname))
+
 app.use(
-  middleware(compiler, {
-    // webpack-dev-middleware options
+  devMiddleware(compiler, {
+     publicPath: config.output.publicPath
+  })
+);
+
+app.use(
+  hotMiddleware(compiler,{
+  //  hot: true,
   })
 );
 
