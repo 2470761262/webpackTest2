@@ -1,5 +1,5 @@
 //import gogo from "../gogo";
-
+import './css/css.css';
 
 if (module.hot) {  
   module.hot.accept();
