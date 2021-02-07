@@ -4,10 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   devtool: "eval-source-map",
 
-  // entry: {
-  //   main: path.join(__dirname, "./src/index.js"),
-  // },
-  entry: ["webpack-hot-middleware/client", "./src/index.js"],
+  entry: {
+    main: path.join(__dirname, "./src/index.js"),
+  },
+//  entry: ["webpack-hot-middleware/client", "./src/index.js"],node启动热跟新版本
   mode: "development",
 
   module: {
@@ -19,9 +19,9 @@ module.exports = {
           {
             loader: "./sorry.js",
           },
-          // {
-          //   loader: "linkloader",
-          // },
+          {
+            loader: "./sorry2.js",
+          },
         ],
       },
     ],
@@ -34,6 +34,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html", // 指定生成的HTML文件名
+      template: './index.html', // 指定模板路径
     }),
   ],
   // 输出

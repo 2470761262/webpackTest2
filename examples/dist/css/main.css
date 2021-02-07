@@ -1,8 +1,0 @@
-.good{
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  transform: translate(10%,10%);
-  transition: all 1s;
-}

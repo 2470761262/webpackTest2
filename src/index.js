@@ -1,10 +1,14 @@
 //import gogo from "../gogo";
-import './css/css.css';
+//import './css/css.css';
+// import indextest from '../sorry.js!./indextest';//双感叹号就不会执行其他的loader了
+
+import indextest from './indextest';
 
 if (module.hot) {  
-  module.hot.accept();
- }
-console.log(550);
-console.log("挺好哦1");
+    module.hot.accept();
+}
+console.log(indextest);
+console.log(5501);
+console.log("挺好哦123");
 
 //gogo.run();

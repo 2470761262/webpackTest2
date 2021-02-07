@@ -5,4 +5,7 @@ import react from "react";
 new Vue({
   
 })
+console.log(react,Vue);
+console.log(react);
+
 console.log("PageB");
