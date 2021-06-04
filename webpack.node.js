@@ -43,16 +43,16 @@ module.exports = {
     publicPath: "",
     filename: "[name].js",
   },
-  // devServer: {
-  //   //  contentBase: path.resolve(process.cwd(), './examples/dist"'),
+  devServer: {
+    //  contentBase: path.resolve(process.cwd(), './examples/dist"'),
 
-  //   publicPath: "/",
+    publicPath: "/",
 
-  //   hot: true,
+    hot: true,
 
-  //   overlay: { errors: true },
+    overlay: { errors: true },
 
-  //   quiet: true,
-  // },
+    quiet: true,
+  },
 };
 

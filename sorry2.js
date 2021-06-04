@@ -6,13 +6,13 @@ module.exports = function (content,a,b) {
   //貌似还是要用 supervisor 来启动
 //   console.log("loader-xxx5555",a,b);
 //   return   "const b = 64646;" +content;//content.replace(550, 322)
-console.log("loader-xxx23232",this.data,b);
+// console.log("loader-xxx23232",this.data,b);
     return content;
 };
 
 
 module.exports.pitch = function (a,b,data) {
-     console.log("sssssssssssssssssssssss");
+    //  console.log("sssssssssssssssssssssss");
     // console.log(a,b,data,2);
     // data.soso = 535;
 };
